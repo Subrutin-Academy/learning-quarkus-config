@@ -17,6 +17,6 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return appProperties.welcomeMessage()+" "+appProperties.currency()+" "+appProperties.timezone();
+        return appProperties.welcomeMessage()+" "+appProperties.currency()+" "+appProperties.timezone() +" "+appProperties.timeout().toSeconds();
     }
 }
